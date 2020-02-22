@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../bootstrap-3.4.1-dist/css/bootstrap.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  	 @media (max-width: 992px) {
+      .box_img img { height:250px; }
+    }
+    @media (max-width: 768px) {
+      .box_img img { height:200px; }
+    }
+    @media (max-width: 580px) {
+      .box_img img { height:180px; }
+    }
+    @media (max-width: 480px) {
+      .box_img img { height:150px; }
+    }
+    @media (max-width: 320px) {
+      .box_img img { height:120px; }
+    }
+  </style>
+</head>
+<body>
+	<div class="container-fluid">
+		<form>
+			<div class=""></div>
+			<div class="form-group">
+		  		<label for="name">Name:</label>
+		  		<input type="text" class="form-control" id="name" placeholder="Enter Name">
+			</div>
+			<div class="form-group">
+		  		<label for="mbno">Mobile Number:</label>
+		  		<input type="number" class="form-control" id="mbno" placeholder="Enter Mobile No.">
+			</div>
+			<div class="form-group">
+		  		<label for="otp">OTP Number:</label>
+		  		<input type="number" class="form-control" id="otp" placeholder="Enter OTP">
+			</div>
+			<div class="form-group">
+		  		<label for="email">E-mail:</label>
+		  		<input type="email" class="form-control" id="email" placeholder="Enter E-mail Id">
+			</div>
+			<div class="form-group">
+					<label for="gender">GENDER:-</label>
+					<br><input type="radio" name="gender" value="male">Male
+					<br>
+					<input type="radio" name="gender" value="female">Female
+					<br>
+					<input type="radio" name="gender" value="Other">Other
+				</div>
+				<div class="form-group">
+					<label for="bday">Birth-Date:-</label>
+					<input type="date" name="Birthday">
+				</div>
+				<div class="form-group">
+		  			<label for="state">State:</label>
+		  			<input type="text" class="form-control" id="state" placeholder="Enter state">
+				</div>
+				<div class="form-group">
+		  			<label for="city">City:</label>
+		  			<input type="text" class="form-control" id="city" placeholder="Enter city">
+				</div>
+				<div class="form-group">
+		  			<label for="numb">Pincode:</label>
+		  			<input type="number" class="form-control" id="numb" placeholder="Enter Pincode">
+				</div>
+				<div class="form-group">
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Submit</button>
+					<div class="modal fade" id="myModal" role="dialog">
+					    <div class="modal-dialog">
+					      	<div class="modal-content">
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal">&times;</button>
+						          <h4 class="modal-title">Message!!</h4>
+						        </div>
+						        <div class="modal-body">
+						          <p>Thank You For Registering In Ad and Promotion Program. You will receive New Offers & Promotions from our associated partners.</p>
+						        </div>
+						        <div class="modal-footer">
+						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						        </div>
+						      </div>
+					    </div>
+					</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
